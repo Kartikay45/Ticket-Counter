@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Counter</title>
+
+</head>
+<body bgcolor="pink" onload="reset()">
+    <Center>
+        <table cellspacing="10" border="0"  id="abc">
+<tr>
+    <td colspan="2" align="center">
+        <h3>
+<font color="brown" size="6" face="algerian" id="idtitle">
+    Ticket Counter
+</font>
+        </h3>
+    </td>
+</tr>
+<tr>
+    <td>Movie Name</td>
+    <td><select name="mymov" id="opt1" onblur="getDate()">
+        <option value="0" id="default">Select Movie &nbsp;&nbsp;</option>
+        <option value="1">Titanic</option>
+        <option value="2">Pathan</option></td>
+</tr>
+<tr>
+    <td>Date</td>
+    <td>
+        <select name="mymov" id="opt2" onblur="getTime()">
+            <option value="0" id="default">Select Date &nbsp;&nbsp;</option>
+            <option value="1" id="date1"></option>
+            <option value="2" id="date2"></option>
+    </td>
+</tr>
+<tr>
+    <td>Time</td>
+    <td>
+        <select name="mymov" id="opt3">
+            <option value="0" id="default">Select Time &nbsp;&nbsp;</option>
+            <option value="1" id="show1"></option>
+            <option value="2" id="show2"></option>
+    </td>
+</tr>
+<tr>
+    <td>Plz enter the no of tickets</td>
+    <td>
+<input type="text" id="tick" align="center" onmouseout="restateFunction()">
+    </td>
+</tr>
+<tr>
+    <td colspan="2" align="center">
+        <br><br>
+        <input type="button" value="Calculate Amount" onclick="price()">
+    </td>
+</tr>
+<tr>
+    <td colspan="2">
+<center>
+<p id="tickets"></p>
+<p id="priceDisplay"></p>
+</center>
+    </td>
+</tr>
+        </table>
+
+    </Center>
+<script src="/js/script.js"></script>
+</body>
+</html>
